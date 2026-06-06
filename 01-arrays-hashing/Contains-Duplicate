@@ -1,0 +1,21 @@
+# Problem:    Contains Duplicate (LeetCode #217)
+# Difficulty: Easy
+# Topic:      Arrays & Hashing
+# Link:       https://leetcode.com/problems/contains-duplicate/
+#
+# Approach:
+#   Iterate through nums and check against a running hash set.
+#   If the current number is already in the set, a duplicate exists.
+#   Otherwise, add it and keep going.
+#
+# Time:  O(n)  — single pass through the list
+# Space: O(n)  — set grows up to n elements in the worst case
+
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+        for num in nums:
+            if num in hashset:
+                return True
+            hashset.add(num)
+        return False
