@@ -1,63 +1,61 @@
-# Daily LeetCode Practice
+# 🧠 LeetCode Solutions
 
-Daily LeetCode solutions organized by topic and difficulty to track my progress, strengthen my data structures and algorithms skills, and prepare for technical interviews.
+A structured repo to track my daily LeetCode progress from the ground up — building strong DSA fundamentals and preparing for technical interviews.
 
-## About This Repository
+> 🟡 **Status: Just getting started.** 0 problems solved. All progress tracked here as I go.
 
-This repository is where I document my daily LeetCode practice. The goal is to stay consistent, improve my problem-solving skills, and build a stronger foundation in data structures and algorithms.
+---
 
-Each solution is organized by topic and difficulty so I can easily review past problems and track my growth over time.
+## 📊 Progress Overview
 
-## Goals
+| | Easy | Medium | Hard | Total |
+|---|:---:|:---:|:---:|:---:|
+| Solved | 0 | 0 | 0 | **0** |
+| Goal | 40 | 70 | 15 | **125** |
 
-- Practice LeetCode problems consistently
-- Improve understanding of data structures and algorithms
-- Prepare for technical interviews
-- Track progress by topic and difficulty
-- Review and improve past solutions
+---
 
-## Topics Covered
+## 📂 Repository Structure
 
-- Arrays
-- Strings
-- Hash Maps
-- Two Pointers
-- Sliding Window
-- Stack
-- Queue
-- Linked Lists
-- Trees
-- Graphs
-- Recursion
-- Dynamic Programming
-- Binary Search
-- Greedy Algorithms
-- Backtracking
+```
+leetcode-solutions/
+├── 01-arrays-hashing/
+├── 02-two-pointers/
+├── 03-sliding-window/
+├── 04-binary-search/
+├── 05-linked-list/
+├── 06-stack/
+├── 07-trees/
+├── 08-heap-priority-queue/
+├── 09-tries/
+├── 10-graphs/
+├── 11-backtracking/
+├── 12-intervals/
+├── 13-dynamic-programming/
+├── 14-greedy/
+└── 15-bit-manipulation/
+```
 
-## Difficulty Levels
+---
 
-Problems will be organized by difficulty:
+## 🎯 Goals
 
-- Easy
-- Medium
-- Hard
+- [ ] Solve every problem in the roadmap above
+- [ ] Commit solutions daily — no skipping
+- [ ] Write time/space complexity for every solution
+- [ ] Revisit hard problems after 1 week to reinforce
 
-## Repository Structure
+---
 
-```bash
-leetcode-practice/
-│
-├── easy/
-│   ├── arrays/
-│   ├── strings/
-│   └── hashmaps/
-│
-├── medium/
-│   ├── trees/
-│   ├── graphs/
-│   └── dynamic-programming/
-│
-├── hard/
-│   └── advanced-problems/
-│
-└── README.md
+## 🛠️ Language
+
+**Python** — primary language for all solutions.
+
+---
+
+## 📚 Resources
+
+- [LeetCode Problemset](https://leetcode.com/problemset/) — problem source
+- [NeetCode Roadmap](https://neetcode.io/practice) — topic ordering reference
+- [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions) — must-know problem list
+- *Cracking the Coding Interview* — supplemental reading
