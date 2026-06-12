@@ -1,0 +1,54 @@
+# Problem:    Valid Anagram (LeetCode #242)
+# Difficulty: Easy
+# Topic:      Arrays & Hashing
+# Link:       https://leetcode.com/problems/valid-anagram/
+#
+# Approach 1: Two Hash Maps
+#   Build a frequency map for each string simultaneously.
+#   Compare counts for every character in s against t.
+#
+# Time:  O(n)  — single pass to build both maps
+# Space: O(n)  — two maps, each up to 26 characters for lowercase alpha
+
+from collections import Counter
+
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        count_s, count_t = {}, {}
+        for i in range(len(s)):
+            count_s[s[i]] = 1 + count_s.get(s[i], 0)
+            count_t[t[i]] = 1 + count_t.get(t[i], 0)
+
+        return all(count_s[c] == count_t.get(c, 0) for c in count_s)
+
+
+# ─────────────────────────────────────────────
+# Approach 2: Sort & Compare
+#
+#   Sort both strings and check for equality.
+#   Anagrams will always produce identical sorted output.
+#
+# Time:  O(n log n)  — dominated by the sort
+# Space: O(n)        — sorted() creates new lists
+# ─────────────────────────────────────────────
+
+    def isAnagram_sort(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+
+
+# ─────────────────────────────────────────────
+# Approach 3: Counter
+#
+#   Use Python's Counter to build frequency maps in one line.
+#   Most concise and idiomatic solution.
+#
+# Time:  O(n)  — Counter iterates once over each string
+# Space: O(n)  — stores up to n unique characters
+# ─────────────────────────────────────────────
+
+    def isAnagram_counter(self, s: str, t: str) -> bool:
+        return Counter(s) == Counter(t)
